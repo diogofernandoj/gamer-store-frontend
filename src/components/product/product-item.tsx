@@ -1,17 +1,14 @@
 "use client";
 
-import { CalculateInstallment, Coin, Product } from "@/src/core";
+import { Coin, Product } from "@/src/core";
 import Link from "next/link";
 import Image from "next/image";
 import RatingReview from "../shared/rating-review";
 import { IconShoppingCartPlus } from "@tabler/icons-react";
+import useInstallment from "@/src/data/hooks/useInstallment";
 
 export default function ProductItem({ product }: { product: Product }) {
-  const installment = new CalculateInstallment().execute(
-    product.promotional_price,
-    12,
-    0.0167
-  );
+  const installment = useInstallment(product.promotional_price);
 
   return (
     <Link
