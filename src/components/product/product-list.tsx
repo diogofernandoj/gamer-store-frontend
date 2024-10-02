@@ -1,6 +1,6 @@
 "use client";
 
-import { products } from "@/src/core";
+import { products } from "@gstore/core";
 import ProductItem from "./product-item";
 import ProductNotFound from "./product-not-found";
 

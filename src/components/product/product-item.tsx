@@ -1,6 +1,6 @@
 "use client";
 
-import { Coin, Product } from "@/src/core";
+import { Coin, Product } from "@gstore/core";
 import Link from "next/link";
 import Image from "next/image";
 import RatingReview from "../shared/rating-review";

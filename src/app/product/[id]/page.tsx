@@ -2,7 +2,7 @@ import ProductInfo from "@/src/components/product/product-info";
 import ProductNotFound from "@/src/components/product/product-not-found";
 import ProductTitle from "@/src/components/product/product-title";
 import PurchaseBanner from "@/src/components/product/purchase-banner";
-import { products } from "@/src/core";
+import { products } from "@gstore/core";
 
 export default function ProductDetailsPage({
   params: { id },

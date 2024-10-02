@@ -3,7 +3,7 @@ import CartIcon from "../shared/cart-icon";
 import Logo from "../shared/logo";
 
 export default function Header() {
-  const items_quantity = 0;
+  const itemsQuantity = 0;
   return (
     <div
       className="flex flex-col h-20"
@@ -16,7 +16,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <Logo />
           <Link href="/checkout/cart">
-            <CartIcon items_quantity={items_quantity} />
+            <CartIcon itemsQuantity={itemsQuantity} />
           </Link>
         </div>
       </div>
