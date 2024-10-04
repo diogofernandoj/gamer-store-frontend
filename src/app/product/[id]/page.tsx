@@ -3,6 +3,8 @@ import ProductInfo from "@/src/components/product/product-info";
 import ProductNotFound from "@/src/components/product/product-not-found";
 import ProductTitle from "@/src/components/product/product-title";
 import PurchaseBanner from "@/src/components/product/purchase-banner";
+import SpecialistReview from "@/src/components/product/specialist-review";
+import UserReviews from "@/src/components/product/user-reviews";
 import { products } from "@gstore/core";
 
 export default function ProductDetailsPage({
@@ -20,6 +22,8 @@ export default function ProductDetailsPage({
         <PurchaseBanner product={product} />
         <PriceEstimator product={product} />
       </div>
+      <UserReviews product={product} />
+      <SpecialistReview product={product} />
     </div>
   ) : (
     <ProductNotFound />
