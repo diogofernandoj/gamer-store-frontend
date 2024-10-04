@@ -1,3 +1,4 @@
+import PriceEstimator from "@/src/components/product/price-estimator";
 import ProductInfo from "@/src/components/product/product-info";
 import ProductNotFound from "@/src/components/product/product-not-found";
 import ProductTitle from "@/src/components/product/product-title";
@@ -17,6 +18,7 @@ export default function ProductDetailsPage({
         <ProductTitle product={product} />
         <ProductInfo product={product} />
         <PurchaseBanner product={product} />
+        <PriceEstimator product={product} />
       </div>
     </div>
   ) : (
