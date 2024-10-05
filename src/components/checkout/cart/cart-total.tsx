@@ -21,7 +21,7 @@ export default function CartTotal({
           {Coin.format(totalAmount ?? 0)}
         </span>
       </div>
-      <Link href="/checkout/pagamento" className="button bg-indigo-700">
+      <Link href="/checkout/payment" className="button bg-indigo-700">
         <IconShoppingCart size={20} />
         <span>Continuar</span>
       </Link>
