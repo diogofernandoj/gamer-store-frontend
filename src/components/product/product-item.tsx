@@ -6,9 +6,11 @@ import Image from "next/image";
 import RatingReview from "../shared/rating-review";
 import { IconShoppingCartPlus } from "@tabler/icons-react";
 import useInstallment from "@/src/data/hooks/useInstallment";
+import useCart from "@/src/data/hooks/useCart";
 
 export default function ProductItem({ product }: { product: Product }) {
   const installment = useInstallment(product.promotional_price);
+  const { addItem } = useCart();
 
   return (
     <Link
@@ -51,8 +53,7 @@ export default function ProductItem({ product }: { product: Product }) {
                     "
           onClick={(e) => {
             e.preventDefault();
-            console.log("Adicionar ao carrinho");
-            // adicionarItem(props.produto)
+            addItem(product);
           }}
         >
           <IconShoppingCartPlus size={20} />
